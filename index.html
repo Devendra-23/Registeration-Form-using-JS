@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <link rel="stylesheet" href="CSS/styles.css">
+    
+
+</head>
+
+<body>
+
+
+
+
+
+<!--<style type="text/css">
+
+.snt-form * { font-family: sans-serif; }
+.snt-form .controlgroup { margin-bottom: 10px; }
+.snt-form label { float: left; text-align: right; width: 300px; }
+.snt-form .control { margin-left: 315px; }
+
+</style>--->
+
+<header class="head">
+    <h1>Like our blogs?</h1>
+</header>
+
+
+<div id="maindiv" style="display: none;">
+
+    <form class="snt-form">
+    
+    <h3 id="appear"> Enter your details below to register for the monthly newsletter. You can unsubscribe from these at any time. </h3>
+
+
+    <!--First Name-->
+    <div class="controlgroup">
+        <label for="snt-form_ContactPropertyFirstName"> First Name </label>
+        
+        <div class="control">
+            <input type='text' id='snt-form_ContactPropertyFirstName' name='ContactPropertyFirstName' placeholder="Enter your first name" required/> 
+        </div>
+
+         <!--Last Name-->
+       
+        <div>
+            <label for="snt-form_ContactPropertyLastName">Last Name </label> 
+            <input type='text' id='snt-form_ContactPropertyLastName' name='ContactPropertyLastName' placeholder="Enter your last name" required/> 
+        </div>
+    </div>
+
+    <!--Email-->
+    <div class="controlgroup">
+        <label for="snt-form_ContactPropertyEmailAddress"> Email Address </label>
+        <div class="control">
+            <input type='email' id='snt-form_ContactPropertyEmailAddress' name='ContactPropertyEmailAddress' placeholder="Enter your email address" required/> 
+        </div>
+        <!--Phone Number-->
+      
+        <div class="control">
+            <label for="snt-form_ContactPropertyPhoneNumber"> Phone Number </label>
+            <input type='text' id='snt-form_ContactPropertyPhoneNumber' name='snt-form_ContactPropertyPhoneNumber' placeholder="+44-XXXX-XXXXXX" required/> 
+        </div>
+
+    </div>
+
+
+    <!--privacy policy-->
+    <div class="controlgroup">
+        <div class="privacy">
+           <input type='checkbox' id='snt-form_PrivacyPolicy' name='ContactPrivacy' required/> 
+           <label for="snt-form_PrivacyPolicy"> I agree that I have read and accept the <a style="text-decoration:none" href="http://www.fortem-international.com/privacy "  target="_blank" rel="noopener noreferrer"> privacy policy </a> </label> 
+        </div>
+    </div>
+        
+   
+    <!--Button-->
+    <div class="controlgroup">
+        <div class="button">
+            <button type="submit">Sign Up</button>               
+        </div>
+    </div>
+
+
+    </form>
+
+    <div class="close">
+        <button class="btn-close" id="hide">&times;</button>
+    </div>
+
+</div>
+
+<div class="my-button">
+    <button  id="showForm" style="display: block;">
+        Show Form
+    </button>
+</div>
+
+<div id="loading-message" class="lds-ring" style="display: none;"><div></div><div></div><div></div><div></div></div>
+</body>
+
+<script src="JS/app.js"></script>
+
+</html>
